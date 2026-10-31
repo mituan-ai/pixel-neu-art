@@ -1,0 +1,21 @@
+{
+  "w": 38,
+  "h": 48,
+  "ax": 17,
+  "ay": 41,
+  "footprint_m": [
+    3,
+    2
+  ],
+  "height_m": 4.5,
+  "view": "N",
+  "refs": [
+    "R-library-02",
+    "R-library-03"
+  ],
+  "confidence": "部分推断",
+  "notes": "人物与持书/西装形态据官方照片；基座3×2 m、总高4.5 m为以近旁成人约1.7 m对比的粗估（误差约30%）。地理朝向未证实：本套临时假定面南用于审核，不能视为定位结论；正面铭文未在此分辨率杜撰。背侧仅保留中性体块。",
+  "newColors": [],
+  "assumed_front": "S",
+  "orientation_verified": false
+}

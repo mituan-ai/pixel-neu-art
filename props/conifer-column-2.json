@@ -1,0 +1,22 @@
+{
+  "w": 62,
+  "h": 116,
+  "ax": 20,
+  "ay": 100,
+  "footprint_m": [
+    4.0,
+    4.0
+  ],
+  "height_m": 12.0,
+  "view": "N",
+  "refs": [
+    "R-info-01",
+    "R-common-06",
+    "R-common-80"
+  ],
+  "confidence": "部分推断",
+  "notes": "形态候选：conifer-column。不命名具体树种；冠径4.0 m、高12.0 m是卫星冠幅4–12 m范围与成人/楼层比例选出的草稿值，非单株定位。三种阔叶、两种针叶、一种高干行道形态各3变体；只用安静成片叶簇，左上亮，右下暗。针叶柱冠的具体种属和北轴针阔数量比例待实地核实。",
+  "newColors": [],
+  "variant": 2,
+  "placement_verified": false
+}
