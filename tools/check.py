@@ -1,7 +1,7 @@
 """校验 props/、facades/ 的 PNG 和 JSON，并输出联系表 sheet.png。
 
 用法：python tools/check.py [文件或目录 ...]   （默认检查 props/ facades/）
-有错误时退出码为 1。lpc/ 是第三方原图，只查 RGBA 和署名表。
+有错误时退出码为 1。chibi/ 是第三方原图，只查 RGBA、尺寸和来源表。
 """
 import json
 import sys
@@ -68,13 +68,16 @@ def check_png(png, pal, errors):
     return img
 
 
-def check_lpc(errors):
-    lpc = ROOT / "lpc"
-    if not (lpc / "CREDITS.csv").exists():
-        errors.append("lpc/: 缺 CREDITS.csv")
-    for png in lpc.rglob("*.png"):
-        if Image.open(png).mode != "RGBA":
+def check_chibi(errors):
+    chibi = ROOT / "chibi"
+    if not (chibi / "README.md").exists():
+        errors.append("chibi/: 缺 README.md（来源和许可证登记表）")
+    for png in chibi.rglob("*.png"):
+        img = Image.open(png)
+        if img.mode != "RGBA":
             errors.append(f"{png.relative_to(ROOT)}: 要 RGBA")
+        if img.size != (72, 128):
+            errors.append(f"{png.relative_to(ROOT)}: 要 72×128（3 帧 × 4 个朝向，一帧 24×32），现在是 {img.width}×{img.height}")
 
 
 def sheet(images, out):
@@ -104,13 +107,13 @@ def sheet(images, out):
 
 def main():
     targets = [Path(a).resolve() for a in sys.argv[1:]] or [ROOT / "props", ROOT / "facades"]
-    pngs = sorted(p for t in targets for p in ([t] if t.is_file() else t.rglob("*.png")) if "lpc" not in p.parts)
+    pngs = sorted(p for t in targets for p in ([t] if t.is_file() else t.rglob("*.png")) if "chibi" not in p.parts)
     pal, errors, images = palette(), [], []
     for png in pngs:
         img = check_png(png, pal, errors)
         if img is not None and img.mode == "RGBA":
             images.append(img)
-    check_lpc(errors)
+    check_chibi(errors)
     sheet(images, ROOT / "sheet.png")
     for e in errors:
         print(e)

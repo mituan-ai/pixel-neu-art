@@ -65,9 +65,9 @@ PNG、RGBA、整像素。不要抗锯齿，不要半透明（投影除外），�
 
 ## 人物
 
-- LPC 规格：64×64 帧，走路图四行（上、左、下、右）× 9 帧，全身约 48 px，游戏里按 0.5 倍显示。
-- 新发型、新衣服优先从 [Universal LPC Spritesheet Character Generator](https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator) 里挑，按原目录结构放进 `lpc/`，并把它在原仓库 `CREDITS.csv` 里的那几行原样追加到 `lpc/CREDITS.csv`。
-- 自己画的部件要和 LPC 身体对齐（同一帧、同一脚底位置），按原色画，染色由游戏完成。自己画的部件按 CC-BY-SA 3.0 发布，同样要在 `lpc/CREDITS.csv` 登记。
+- Q 版 24×32 规格：一帧 24×32，脚底在第 30 行，3 帧（迈步、站立、迈步）× 4 个朝向，游戏里按 1 倍显示。规格细节见 [chibi/README.md](chibi/README.md)。
+- 新发型要和 `chibi/base-male.png` 的头对齐（同一帧、同一位置），按原色画，染色由游戏完成。
+- 第三方部件优先找 OpenGameArt 上给 Cabbit 24×32 底模做的 CC0 素材，并在 `chibi/README.md` 的表里登记作者、许可证和链接。
 
 ## 第三方素材和 AI 生成图
 
@@ -76,4 +76,4 @@ PNG、RGBA、整像素。不要抗锯齿，不要半透明（投影除外），�
 
 ## 许可
 
-提交 PR 即表示：投稿是你本人创作，或你有权按上面的许可证提交；`lpc/` 以外的原创内容按 CC-BY 4.0 授权给本项目和所有人使用。
+提交 PR 即表示：投稿是你本人创作，或你有权按上面的许可证提交；原创内容按 CC-BY 4.0 授权给本项目和所有人使用。

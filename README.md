@@ -10,7 +10,7 @@
 |---|---|---|
 | `props/` | 物件：雕塑、路灯、校车、树等，每个视角一张 PNG + 同名 JSON | CC-BY 4.0 |
 | `facades/` | 楼的正立面图 | CC-BY 4.0 |
-| `lpc/` | 人物部件，来自 Universal LPC Spritesheet Character Generator | 逐件见 `lpc/CREDITS.csv`（CC-BY-SA 3.0、OGA-BY 3.0 等） |
+| `chibi/` | Q 版人物底模和发型，来自 OpenGameArt 的 Cabbit 24×32 系列 | CC0 1.0，来源见 `chibi/README.md` |
 | `palette.gpl` | 全项目调色板（GIMP、Aseprite 都能导入） | CC-BY 4.0 |
 | `tools/check.py` | 校验脚本，同时生成联系表 | CC-BY 4.0 |
 
@@ -25,6 +25,6 @@
 
 ## 许可
 
-除 `lpc/` 外，本仓库的素材由谜团 mituan 及各位贡献者创作，按 [CC-BY 4.0](LICENSE) 发布。署名写「像素东大 · Pixel NEU 及贡献者」，并附本仓库链接。
+除 `chibi/` 外，本仓库的素材由谜团 mituan 及各位贡献者创作，按 [CC-BY 4.0](LICENSE) 发布。署名写「像素东大 · Pixel NEU 及贡献者」，并附本仓库链接。
 
-`lpc/` 里的文件按各自在 `lpc/CREDITS.csv` 里列出的许可证发布，署名链见该文件。
+`chibi/` 里的第三方文件是 CC0，作者和出处见 `chibi/README.md`；之后投稿到 `chibi/` 的原创部件同样按 CC-BY 4.0 发布。
