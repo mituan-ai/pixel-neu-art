@@ -66,6 +66,10 @@ Columns: 8
 216 176 74	gold
 43 52 66	slate
 255 255 255	white
+154 64 56	track0
+180 82 74	track1
+60 114 102	court0
+76 138 122	court1
 140 140 140	tint0
 189 189 189	tint1
 230 230 230	tint2
