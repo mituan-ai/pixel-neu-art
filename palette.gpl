@@ -68,9 +68,12 @@ Columns: 8
 255 255 255	white
 154 64 56	track0
 180 82 74	track1
-60 114 102	court0
-76 138 122	court1
+76 123 66	court0
+98 147 83	court1
 140 140 140	tint0
 189 189 189	tint1
 230 230 230	tint2
 255 255 255	tint3
+55 64 59	statue0
+83 96 87	statue1
+108 117 109	statue2
